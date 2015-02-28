@@ -13,6 +13,7 @@ return array(
 	'preload'=>array('log'),
     'modules'=>array(
         'Admin',
+        'Shake',
         'gii'=>array(
             'class'=>'system.gii.GiiModule',
             'password'=>'123456',
