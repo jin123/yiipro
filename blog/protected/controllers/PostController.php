@@ -115,7 +115,7 @@ class PostController extends Controller
 	 * Lists all models.
 	 */
 	public function actionIndex(){
-	
+	/*
 		$auth=Yii::app()->authManager;
 		
 		$auth->createOperation('createPost','create a post');
@@ -165,7 +165,7 @@ class PostController extends Controller
 		$auth->assign('editor','editorC');
 		
 		$auth->assign('admin','adminD');
-				die;
+				die;*/
 		$criteria=new CDbCriteria(array(
 			'condition'=>'status='.Post::STATUS_PUBLISHED,
 			'order'=>'update_time DESC',
