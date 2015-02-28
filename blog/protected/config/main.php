@@ -11,7 +11,16 @@ return array(
 
 	// preloading 'log' component
 	'preload'=>array('log'),
-
+    'modules'=>array(
+        'Admin',
+        'gii'=>array(
+            'class'=>'system.gii.GiiModule',
+            'password'=>'123456',
+            // 'ipFilters'=>array(...IP ï¿½Ğ±ï¿½...),
+            // 'newFileMode'=>0666,
+            // 'newDirMode'=>0777,
+        ),
+    ),
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
@@ -29,15 +38,15 @@ return array(
 		// uncomment the following to use a MySQL database
 		'authManager'=>array(
 
-		'class'=>'CDbAuthManager',//ÈÏÖ¤ÀàÃû³Æ
+		'class'=>'CDbAuthManager',//è®¤è¯ç±»åç§°
 
-		'defaultRoles'=>array('guest'),//Ä¬ÈÏ½ÇÉ«
+		'defaultRoles'=>array('guest'),//é»˜è®¤è§’è‰²
 
-		'itemTable' => 'tbl_authitem',//ÈÏÖ¤Ïî±íÃû³Æ
+		'itemTable' => 'tbl_authitem',//è®¤è¯é¡¹è¡¨åç§°
 
-		'itemChildTable' => 'tbl_authitemchild',//ÈÏÖ¤Ïî¸¸×Ó¹ØÏµ
+		'itemChildTable' => 'tbl_authitemchild',//è®¤è¯é¡¹çˆ¶å­å…³ç³»
 
-		'assignmentTable' => 'tbl_authassignment',//ÈÏÖ¤Ïî¸³È¨¹ØÏµ
+		'assignmentTable' => 'tbl_authassignment',//è®¤è¯é¡¹èµ‹æƒå…³ç³»
 
 		),
 		'db'=>array(
