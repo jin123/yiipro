@@ -14,12 +14,12 @@ $(function(){
 <table width="100%" class="table_form contentWrap">
 <tr>
 <td>角色名称</td> 
-<td><input type="text" name="info[rolename]" value="<?php echo $info['rolename'];?>" class="input-text" id="rolename"></input></td>
+<td><input type="text" name="info[rolename]" value="<?php if(isset($info['rolename'])){ echo $info['rolename']; } ?>" class="input-text" id="rolename"></input></td>
 </tr>
-<input name="id" type="hidden" value="<?php echo $info['roleid'];?>">
+<input name="id" type="hidden" value="<?php if(isset($info['roleid'])){ echo $info['roleid'];}?>">
 <tr>
 <td>角色描述</td>
-<td><textarea name="info[description]" rows="2" cols="20" id="description" class="inputtext" style="height:100px;width:500px;"><?php echo $info['description'];?> </textarea></td>
+<td><textarea name="info[description]" rows="2" cols="20" id="description" class="inputtext" style="height:100px;width:500px;"><?php if(isset($info['description'])){ echo $info['description'];}?> </textarea></td>
 </tr>
 </table>
 

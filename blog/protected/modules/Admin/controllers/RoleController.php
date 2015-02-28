@@ -13,7 +13,7 @@ class RoleController extends Controller
 	
 	
 	     $tablePrefix = Yii::app()->db->tablePrefix;
-	     if($_POST['info']){
+	     if(isset($_POST['info'])){
 	     
 	      $info = array();
 	         if(isset($_POST['id']) && !empty($_POST['id'])){

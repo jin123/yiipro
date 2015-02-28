@@ -3,18 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>后台管理平台</title>
-<link href="/demos/blog/Admin/statics/css/reset.css" rel="stylesheet" type="text/css" />
-<link href="/demos/blog/Admin/statics/css/zh-cn-system.css" rel="stylesheet" type="text/css" />
-<link href="/demos/blog/Admin/statics/css/dialog.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="/demos/blog/Admin/statics/css/style/styles1.css" title="styles1" media="screen" />
-<link rel="alternate stylesheet" type="text/css" href="/demos/blog/Admin/statics/css/style/zh-cn-styles2.css" title="styles2" media="screen" />
-<link rel="alternate stylesheet" type="text/css" href="/demos/blog/Admin/statics/css/style/zh-cn-styles3.css" title="styles3" media="screen" />
-<link rel="alternate stylesheet" type="text/css" href="/demos/blog/Admin/statics/css/style/zh-cn-styles4.css" title="styles4" media="screen" />
-<script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/jquery.min.js"></script>
-<script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/styleswitch.js"></script>
-<script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/dialog.js"></script>
-<script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/hotkeys.js"></script>
-<script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/jquery.sgallery.js"></script>
+<link href="/Admin/statics/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="/Admin/statics/css/zh-cn-system.css" rel="stylesheet" type="text/css" />
+<link href="/Admin/statics/css/dialog.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/Admin/statics/css/style/styles1.css" title="styles1" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="/Admin/statics/css/style/zh-cn-styles2.css" title="styles2" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="/Admin/statics/css/style/zh-cn-styles3.css" title="styles3" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="/Admin/statics/css/style/zh-cn-styles4.css" title="styles4" media="screen" />
+<script language="javascript" type="text/javascript" src="/Admin/statics/js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="/Admin/statics/js/styleswitch.js"></script>
+<script language="javascript" type="text/javascript" src="/Admin/statics/js/dialog.js"></script>
+<script language="javascript" type="text/javascript" src="/Admin/statics/js/hotkeys.js"></script>
+<script language="javascript" type="text/javascript" src="/Admin/statics/js/jquery.sgallery.js"></script>
 <script type="text/javascript">
 var pc_hash = 'IYnVLx';
 </script>
@@ -32,7 +32,7 @@ var pc_hash = 'IYnVLx';
 .pd{padding:4px;}
 .ac{background-color:#333; color:#fff;}
 .hvs{background-color:#555; cursor: pointer;}
-.bg_btn{background: url(/demos/blog/Admin/statics/images/admin_img/icon2.jpg) no-repeat; width:32px; height:32px;}
+.bg_btn{background: url(/Admin/statics/images/admin_img/icon2.jpg) no-repeat; width:32px; height:32px;}
 </style>
 </head>
 <body scroll="no" class="objbody">
@@ -46,7 +46,7 @@ var pc_hash = 'IYnVLx';
         $array = Admin::admin_menu(0);
        foreach($array as $_value) {
         	if($_value['id']==10) {
-        		echo '<li id="_M'.$_value['id'].'" class="on top_menu"><a href="javascript:_M('.$_value['id'].',\'/demos/blog/index.php?r='.$_value['m'].'/'.$_value['c'].'/'.$_value['a'].'\')" hidefocus="true" style="outline:none;">'.$_value['name'].'</a></li>';
+        		echo '<li id="_M'.$_value['id'].'" class="on top_menu"><a href="javascript:_M('.$_value['id'].',\'/index.php?r='.$_value['m'].'/'.$_value['c'].'/'.$_value['a'].'\')" hidefocus="true" style="outline:none;">'.$_value['name'].'</a></li>';
         		
         	} else {
         		echo '<li id="_M'.$_value['id'].'" class="top_menu"><a href="javascript:_M('.$_value['id'].',\'?m='.$_value['m'].'&c='.$_value['c'].'&a='.$_value['a'].'\')"  hidefocus="true" style="outline:none;">'.$_value['name'].'</a></li>';
@@ -72,7 +72,7 @@ var pc_hash = 'IYnVLx';
     当前位置:<span id="current_pos"></span></div>
     	<div class="col-1">
         	<div class="content" style="position:relative; overflow:hidden">
-                <iframe name="right" id="rightMain" src="/demos/blog/index.php?r=Admin/Default/public_main" frameborder="false" scrolling="auto" style="border:none; margin-bottom:30px" width="100%" height="auto" allowtransparency="true"></iframe>
+                <iframe name="right" id="rightMain" src="/index.php?r=Admin/Default/public_main" frameborder="false" scrolling="auto" style="border:none; margin-bottom:30px" width="100%" height="auto" allowtransparency="true"></iframe>
                 <div class="fav-nav">
 					<div id="panellist">
 			
@@ -170,7 +170,7 @@ $(document).ready(function(){
 	$(".tab-web-panel").mouseover(function(){clearh();$('.tab_web a').addClass('on')}).mouseout(function(){hidden_site_list_1();$('.tab_web a').removeClass('on')});
 	//默认载入左侧菜单
 	//$("#leftMain").load("?m=admin&c=index&a=public_menu_left&menuid=10");
-    $("#leftMain").load("/demos/blog/index.php?r=Admin/Default/public_menu_left&menuid=10");
+    $("#leftMain").load("/index.php?r=Admin/Default/public_menu_left&menuid=10");
 	$("#btnx").removeClass("btns2");
 	$("#Site_model,#btnx h6").css("display","none");
 	$("#btnx").hover(function(){$("#Site_model,#btnx h6").css("display","block");$(this).addClass("btns2");$(".bg_btn").hide();},function(){$("#Site_model,#btnx h6").css("display","none");$(this).removeClass("btns2");$(".bg_btn").show();});
@@ -230,18 +230,18 @@ function _M(menuid,targetUrl) {
 	$("#bigid").val(menuid);
 	$("#paneladd").html('<a class="panel-add" href="javascript:add_panel();"><em>添加</em></a>');
 	if(menuid!=8) {
-		$("#leftMain").load("/demos/blog/index.php?r=Admin/Default/public_menu_left&menuid="+menuid, {limit: 25}, function(){
+		$("#leftMain").load("/index.php?r=Admin/Default/public_menu_left&menuid="+menuid, {limit: 25}, function(){
 		   windowW();
 		 });
 	} else {
-		$("#leftMain").load("/demos/blog/index.php?r=Admin/Default/public_menu_left&menuid="+menuid, {limit: 25}, function(){
+		$("#leftMain").load("/index.php?r=Admin/Default/public_menu_left&menuid="+menuid, {limit: 25}, function(){
 		   windowW();
 		 });
 	}
 	//$("#rightMain").attr('src', targetUrl);
 	$('.top_menu').removeClass("on");
 	$('#_M'+menuid).addClass("on");
-	$.get("/demos/blog/index.php?r=Admin/Default/public_current_pos&menuid="+menuid, function(data){
+	$.get("/index.php?r=Admin/Default/public_current_pos&menuid="+menuid, function(data){
 		$("#current_pos").html(data);
 	});
 	//瑜帮拷锟斤拷��帮拷濠����锟斤拷���锟斤拷锟斤拷锟斤拷锟斤拷���锟斤拷锟斤拷锟斤拷锟芥��锟斤拷锟藉�革拷锟藉��锟斤拷锟斤拷
@@ -260,7 +260,7 @@ function _MP(menuid,targetUrl) {
 	$("#rightMain").attr('src', targetUrl+'&menuid='+menuid+'&pc_hash='+pc_hash);
 	$('.sub_menu').removeClass("on fb blue");
 	$('#_MP'+menuid).addClass("on fb blue");
-	$.get("/demos/blog/index.php?r=Admin/Default/public_current_pos&menuid="+menuid, function(data){
+	$.get("/index.php?r=Admin/Default/public_current_pos&menuid="+menuid, function(data){
 		//$("#current_pos").html(data+'<span id="current_pos_attr"></span>');
 	});
 	$("#current_pos").data('clicknum', 1);

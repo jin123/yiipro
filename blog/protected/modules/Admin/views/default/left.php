@@ -14,7 +14,7 @@ foreach($datas as $_value) {
 		} else {
 			$classname = 'class="sub_menu"';
 		}
-		echo '<li id="_MP'.$_m['id'].'" '.$classname.'><a href="javascript:_MP('.$_m['id'].',\'/demos/blog/index.php?r='.$_m['m'].'/'.$_m['c'].'/'.$_m['a'].$data.'\');" hidefocus="true" style="outline:none;">'.$_m['name'].'</a></li>';
+		echo '<li id="_MP'.$_m['id'].'" '.$classname.'><a href="javascript:_MP('.$_m['id'].',\'/index.php?r='.$_m['m'].'/'.$_m['c'].'/'.$_m['a'].$data.'\');" hidefocus="true" style="outline:none;">'.$_m['name'].'</a></li>';
 	}
 	echo '</ul>';
 }

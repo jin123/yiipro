@@ -5,13 +5,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=7" />
 <title>后台管理</title>
-<link href="/demos/blog/Admin/statics/css/reset.css" rel="stylesheet" type="text/css" />
-<link href="/demos/blog/Admin/statics/css/zh-cn-system.css" rel="stylesheet" type="text/css" />
-<link href="/demos/blog/Admin/statics/css/table_form.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" href="/demos/blog/Admin/statics/css/style/styles1.css" title="styles1" media="screen" />
-<link rel="alternate stylesheet" type="text/css" href="/demos/blog/Admin/statics/css/style/zh-cn-styles2.css" title="styles2" media="screen" />
-<link rel="alternate stylesheet" type="text/css" href="/demos/blog/Admin/statics/css/style/zh-cn-styles3.css" title="styles3" media="screen" />
-<link rel="alternate stylesheet" type="text/css" href="/demos/blog/Admin/statics/css/style/zh-cn-styles4.css" title="styles4" media="screen" />
+<link href="/Admin/statics/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="/Admin/statics/css/zh-cn-system.css" rel="stylesheet" type="text/css" />
+<link href="/Admin/statics/css/table_form.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/Admin/statics/css/style/styles1.css" title="styles1" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="/Admin/statics/css/style/zh-cn-styles2.css" title="styles2" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="/Admin/statics/css/style/zh-cn-styles3.css" title="styles3" media="screen" />
+<link rel="alternate stylesheet" type="text/css" href="/Admin/statics/css/style/zh-cn-styles4.css" title="styles4" media="screen" />
 <script>
            var GV = {
     DIMAUB: "/",
@@ -19,12 +19,12 @@
     TOKEN: ""
 };
     </script>
-    <script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/jquery.min.js"></script>
-    <script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/common.js"></script>
-<script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/admin_common.js"></script>
-<script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/styleswitch.js"></script>
-<script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/formvalidator.js" charset="UTF-8"></script>
-<script language="javascript" type="text/javascript" src="/demos/blog/Admin/statics/js/formvalidatorregex.js" charset="UTF-8"></script>
+    <script language="javascript" type="text/javascript" src="/Admin/statics/js/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/Admin/statics/js/common.js"></script>
+<script language="javascript" type="text/javascript" src="/Admin/statics/js/admin_common.js"></script>
+<script language="javascript" type="text/javascript" src="/Admin/statics/js/styleswitch.js"></script>
+<script language="javascript" type="text/javascript" src="/Admin/statics/js/formvalidator.js" charset="UTF-8"></script>
+<script language="javascript" type="text/javascript" src="/Admin/statics/js/formvalidatorregex.js" charset="UTF-8"></script>
 <script type="text/javascript">
 	window.focus();
 	var pc_hash = '123456>';
