@@ -1,0 +1,49 @@
+﻿a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,dialog,div,dl,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,html,i,iframe,img,ins,kbd,label,legend,mark,menu,meter,nav,object,ol,output,p,pre,progress,q,rp,rt,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tr,td,tbody,td,tfoot,th,thead,time,tt,u,ul,li,var,video,xmp{border:0;margin:0;padding:0;font-size:12px;font-family:Arial,"宋体";}
+ol,ul,li{list-style: none; float:left;}
+img{border:none;}
+a{text-decoration:none;}
+a:hover{ color:#00CC00; text-decoration:underline;}
+body{background:url('../images/bj.gif');height:768px;}
+
+
+#box{ width:1280px; margin:auto;}
+.logo{ float:left; width:700px; margin-top:442px; margin-left:580px; display:inline;}
+.list{ float:left; width:1098px; margin-left:182px; display:inline;}
+.list img{ float:left; width:155px; height:154px;}
+.list ul { float:left; width:830px; margin-top:30px; margin-left:32px;display:inline;}
+.list ul li{ line-height:60px; width:800px; font-size:48px; color:#FFF;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
