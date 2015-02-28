@@ -37,7 +37,7 @@ return array(
 
 		'itemChildTable' => 'tbl_authitemchild',//认证项父子关系
 
-		'assignmentTable' => 'tbl_authassignment',//认证项赋权关系
+		'assignmentTable' => 'pre_auth_assignment',//认证项赋权关系
 
 		),
 		'db'=>array(
