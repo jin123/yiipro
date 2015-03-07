@@ -96,7 +96,7 @@ class SiteController extends Controller
 	}
 public function actionIndex()
 	{
-			$private_key = file_get_contents("./Public/ssl/private_key.pem");
+		$private_key = file_get_contents("./Public/ssl/private_key.pem");
 	     
 	     $public_key = file_get_contents("./Public/ssl/rsa_public_key.pem");
 	     $pi_key =  openssl_pkey_get_private($private_key);//这个函数可用来判断私钥是否是可用的，可用返回资源id Resource id  
