@@ -68,6 +68,14 @@ return array(
     'charset' => 'utf8',
     'enableParamLogging'  => true
 ),
+'mongodb' => array(
+        'class'            => 'EMongoDB',
+        'connectionString' => 'mongodb://localhost',
+        'dbName'           => 'myDatabaseName',
+        'fsyncFlag'        => true,
+        'safeFlag'         => true,
+        'useCursor'        => false
+      ),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
