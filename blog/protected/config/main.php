@@ -68,7 +68,7 @@ return array(
     'charset' => 'utf8',
     'enableParamLogging'  => true
 ),
-'mongodb' => array(
+  'mongodb' => array(
         'class'            => 'EMongoDB',
         'connectionString' => 'mongodb://localhost',
         'dbName'           => 'myDatabaseName',
