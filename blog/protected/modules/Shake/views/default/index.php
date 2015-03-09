@@ -81,7 +81,7 @@ $(function(){
 							
 								$.ajax({ 
 									type: "post", 
-									url : "<{:U('Shake/addStrength')}>",
+									url : "/index.php?r=Shake/Default/addStrength",
 									dataType:'json', 
 									data: 'strength='+strength+'&wechater=<{$wecha_id}>&shakeid=<{$shakeid}>',
 									success: function(data){
@@ -126,37 +126,14 @@ $(function(){
 		}
 	}
 	
-	/*setInterval(function(){
-		var count=1000;
-		strength=parseInt(parseInt($('#num').html())-last);
-		if (strength != 0){
-			$.ajax({ 
-				type: "post", 
-				url : "{:U('Shake/addStrength')}",
-				dataType:'json', 
-				data: 'strength='+strength+'&wechater={:I('get.openid')}&shakeid={:I('get.shakeid')}',
-				success: function(data){
-					if (data.success == 1){				
-						last=parseInt(last + strength);
-					}else{
-						
-					}
-				}
-			});
-		}
-		
-	},1000);*/
-	
 
 	function login(){  
 		var shakeid="<{$shakeid}>";
-		var token="<{$token}>";
-		//alert(shakeid);return;
 		$.ajax({ 
 			type: "post", 
-			url : "<{:U('Shake/isStart')}>",
+			url : "/index.php?r=Shake/Default/isStart",
 			dataType:'json', 
-			data: 'shakeid=<{$shakeid}>&token=<{$token}>',
+			data: 'shakeid=<{$shakeid}>',
 			success: function(data){
 				var kk=data.start;
 				var detime=data.duration;
@@ -175,13 +152,6 @@ $(function(){
 							$('#result').html("活动结束!");
 						}
 					},1000);
-					/*hok = setTimeout(function(){
-						clearTimeout(ho);
-						$('#result').html("活动结束");
-						//blognum=parseInt(div.innerHTML);
-						//alert(blognum);
-						blog=false;
-					},1000);*/
 				}else if(kk==3){
 					
 					clearTimeout(hoko);
@@ -193,7 +163,6 @@ $(function(){
 		
 	}
 	document.getElementById("music").play();
-	//ondevice();
 	login();	
 	
 });

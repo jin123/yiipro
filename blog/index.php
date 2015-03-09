@@ -1,4 +1,5 @@
 <?php
+header("Content-type: text/html; charset=utf-8");
 error_reporting(-1);
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../framework/yii.php';

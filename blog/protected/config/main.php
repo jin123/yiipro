@@ -58,7 +58,16 @@ return array(
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),
-		
+		  'db2'=>array(
+    'class' => 'CDbConnection',
+    'connectionString' => 'mysql:host=127.0.0.1;dbname=syh',
+    'emulatePrepare' => true,
+	'tablePrefix' => '',
+    'username' => 'root',
+    'password' => '',
+    'charset' => 'utf8',
+    'enableParamLogging'  => true
+),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
