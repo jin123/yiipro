@@ -14,6 +14,7 @@ return array(
     'modules'=>array(
         'Admin',
         'Shake',
+		  'Api',
         'gii'=>array(
             'class'=>'system.gii.GiiModule',
             'password'=>'123456',
@@ -27,7 +28,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 	),
-
+      
 	'defaultController'=>'post',
 
 	// application components
@@ -36,7 +37,11 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		// uncomment the following to use a MySQL database
+		'aliases' => array(
+        //Path to your Composer vendor dir plus starship/restfullyii path
+       'RestfullYii' =>realpath(__DIR__ . '/../extensions/RestfullYii'),
+        ),
+	 	// uncomment the following to use a MySQL database
 		'authManager'=>array(
 
 		'class'=>'CDbAuthManager',//认证类名称
@@ -82,11 +87,9 @@ return array(
 		),
 		'urlManager'=>array(
 			'urlFormat'=>'get',
-			'rules'=>array(
-				'post/<id:\d+>/<title:.*?>'=>'post/view',
-				'posts/<tag:.*?>'=>'post/index',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
+			 'rules' => require(
+                dirname(__FILE__).'/../extensions/RestfullYii/config/routes.php'
+            ),
 		),
 		'log'=>array(
 			'class'=>'CLogRouter',
